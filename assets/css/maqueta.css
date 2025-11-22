@@ -1,0 +1,141 @@
+/* Visualización desde PC (> 1200px) */
+@media (min-width:1200px) {
+  body {
+    font-family: Arial;
+  }
+
+  header,
+  #menu,
+  #nav2,
+  #nav1,
+  #cuerpo,
+  aside,
+  footer {
+    background:#DCE8F8;
+    padding:20px;
+    border:5px solid black;
+    box-sizing:border-box;
+  }
+
+  header {
+    width:100%;
+  }
+
+  #menu {
+    width:100%;
+  }
+
+  #nav2 {
+    width:100%;
+  }
+
+  /* Parte izquierda de nav1 */
+  #nav1 {
+    width:20%;
+    float:left;
+    height:400px;
+  }
+
+  /* Parte del centro de cuerpo */
+  #cuerpo {
+    width:55%;
+    float:left;
+    height:400px;
+    margin:0 2.5%;
+  }
+
+  /* Parte derecha de banner */
+  aside {
+    width:20%;
+    float:left;
+    height:400px;
+  }
+
+  footer {
+    clear:both;
+    width:100%;
+  }
+}
+
+/* Visualización en tablet (700px–1199px) */
+@media (min-width:700px) and (max-width:1199px) {
+
+  body {
+    font-family: Calibri;
+  }
+
+  header,
+  #menu,
+  #nav1,
+  #cuerpo,
+  aside,
+  footer {
+    background:#DCE8F8;
+    padding:20px;
+    border:5px solid black;
+    box-sizing:border-box;
+  }
+
+  header, #menu {
+    width:100%;
+  }
+
+  /* Parte izquierda de nav1 */
+  #nav1 {
+    width:25%;
+    float:left;
+    height:450px;
+  }
+
+  /* Parte derecha de cuerpo */
+  #cuerpo {
+    width:70%;
+    float:left;
+    height:450px;
+    margin-left:5%;
+  }
+
+  /* Banner que va debajo del cuerpo */
+  aside {
+    clear:both;
+    width:100%;
+    height:120px;
+    margin-top:10px;
+  }
+
+  footer {
+    width:100%;
+    clear:both;
+  }
+
+  /* Nav2 no aparecerá en tablet */
+  #nav2 {
+    display:none;
+  }
+}
+
+/* Visualización en móvil < 699px */
+@media (max-width:699px) {
+
+  * {
+    box-sizing:border-box;
+  }
+
+  body {
+    font-family: "Times New Roman";
+  }
+
+  header,
+  #menu,
+  #nav1,
+  #nav2,
+  #cuerpo,
+  aside,
+  footer {
+    background:#DCE8F8;
+    padding:20px;
+    border:5px solid black;
+    width:100%;
+    margin:10px 0;
+  }
+}
